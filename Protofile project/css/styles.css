@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0 10%;
+    padding-bottom: 40px;
+}
+
+.head_logo, .head_left {
+    width: 50%;
+    margin: 0;
+    float: left;
+}
+
+.head_left { direction: rtl; }
+
+.head_left h1 {
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+}
+
+.head_left h3 {
+    margin-top: 0;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+hr { border-bottom: 5px solid #7d97ad; margin-bottom: 20px; }
+
+header div img { width: 85px }
+
+article > head > h2 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: #7d97ad;
+}
+
+.all_sites { width: 100% }
+
+.all_sites > figure {
+    width: 31%;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    margin-left: 3%;
+}
+    
+.all_sites > figure:first-child { margin-left: 0; }
+
+.all_sites > figure > img { width: 100%; }
+    
+figcaption h1 {
+    margin: 10px 0;
+    font-size: 50px;
+    color: #2d3c49;
+}
+
+figcaption a{ text-decoration: none; }
+
+/* Media */
+
+@media screen and (max-width: 1066px) {
+    body {
+        padding: 0;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .all_sites { text-align: center }
+    
+    .all_sites > figure {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 708px) {
+    .head_logo, .head_left {
+        display: block;
+        text-align: center;
+        width: 100%
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .featured_work { text-align: center }
+    
+    .all_sites > figure:first-child { margin-left: auto; }
+    
+    .all_sites > figure{ display: block; margin: 0 auto; }
+}
+
